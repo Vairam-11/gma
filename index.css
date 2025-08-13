@@ -1,0 +1,72 @@
+body{
+    background-image: url('gm.png');
+    background-size: cover;
+}
+.congrats {
+  color: gold;
+  font-size: 1.5em;
+  animation: pop 0.5s ease;
+}
+
+@keyframes pop {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+.anime-blink {
+    background-color: #d70b0b;
+    color: rgb(195, 237, 11);
+    /* border: none; */
+    padding: 12px 20px;
+    font-size: 10px;
+    border-radius: 100px;
+    /* top:100px;
+    bottom:100px; */
+    cursor: pointer;
+    animation: blinkAnime 1s infinite;
+    box-shadow: 0 0 10px #ebe404;
+    transition: transform 0.5s ease;
+  }
+
+  .anime-blink:hover {
+    transform: scale(1.1);
+  }
+
+  @keyframes blinkAnime {
+    0%, 100% {
+      opacity: 1;
+      box-shadow: 0 0 10px #ff4da6, 0 0 20px #ff4da6;
+    }
+    50% {
+      opacity: 0.6;
+      box-shadow: 0 0 5px #ff4da6, 0 0 10px #ff4da6;
+    }
+  }
+
+  .congrats {
+    font-size: 28px;
+    font-weight: bold;
+    color: #dd1b1b;
+    text-align: center;
+    margin-top: 20px;
+    animation: popGlow 1.5s ease-out forwards;
+    text-shadow:
+      0 0 5px #00ffcc,
+      0 0 10px #00ffcc,
+      0 0 20px #00ffcc,
+      0 0 40px #00ffcc;
+  }
+
+  @keyframes popGlow {
+    0% {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
